@@ -1,39 +1,39 @@
-name: 下载JM本子 (dispatch)
+姓名'Bd_aauthor_aTitle_Pindex'描述
 
-on:
-  workflow_dispatch:
-    inputs:
-      JM_ALBUM_IDS:
-        type: string
-        description: 本子id（多个id用-隔开，如 '123-456-789'）
-        required: false
+在……之上：:
+工作流程分派(_D)：:
+输入：:
+JM_ALBUM_IDS：:
+类型：字符串: string
+描述：本子id(多个id用-隔开，如'123-456-789'): 本子id（多个id用-隔开，如 '123-456-789'）
+必填项：false: false
 
-      JM_PHOTO_IDS:
-        type: string
-        description: 章节id（单独下载章节，多个id同上）
-        required: false
+JM_PHOTO_IDS：:
+类型：字符串: string
+描述：章节id(单独下载章节，多个id同上): 章节id（单独下载章节，多个id同上）
+必填项：false: false
 
-      CLIENT_IMPL:
-        type: string
-        description: 客户端类型（client.impl），下载失败时，你可以尝试填入此项重试。'api' 表示移动端，'html' 表示网页端。
-        default: ''
-        required: false
+client_IMPL：:
+类型：字符串: string
+描述：客户端类型(client.impl)，下载失败时，你可以尝试填入此项重试。'API'表示移动端，'html'表示网页端。: 客户端类型（client.impl），下载失败时，你可以尝试填入此项重试。'api'表示移动端，'html'表示网页端。
+默认值：“”: ''
+必填项：false: false
 
-      IMAGE_SUFFIX:
-        type: string
-        description: 图片后缀（download.cache.suffix），默认为空，表示不做图片格式转换。可填入例如 'png' 'jpg'
-        default: ''
-        required: false
+image_SUFFIX：:
+类型：字符串: string
+描述：图片后缀(download.cache.suffix)，默认为空，表示不做图片格式转换。可填入例如'PNG"jpg': 图片后缀(download.cache.suffix)，默认为空，表示不做图片格式转换。可填入例如'png' 'jpg'
+默认值：“”: ''
+必填项：false: false
 
-      IMAGE_QUALITY:
-        type: number
-        description: 图片质量（1-99开启；100不压缩。此配置不支持后缀=PNG的图片。pdf模式会把图片转为JPEG压缩再合并pdf）
-        default: 100
-        required: false
+图像质量(_Q)：:
+类型：编号: number
+描述：图片质量（1-99开启；100不压缩。此配置不支持后缀=PNG的图片。pdf模式会把图片转为JPEG压缩再合并pdf): 图片质量（1-99开启；100不压缩。此配置不支持后缀=PNG的图片。pdf模式会把图片转为JPEG压缩再合并pdf）
+默认值：100: 100
+必填项：false: false
 
-      DIR_RULE:
-        type: string
-        description: 下载文件夹规则（dir_rule.rule）。默认使用配置文件的 'Bd_Aauthor_Atitle_Pindex'。
+DIR_RULE：:
+类型：字符串: string
+描述：下载文件夹规则(dir_rule.rule)。默认使用配置文件的'BD_aauthor_aTitle_PINDEX'。: 下载文件夹规则(dir_rule.rule)。默认使用配置文件的'Bd_aauthor_aTitle_Pindex'。
         default: ''
         required: false
 
